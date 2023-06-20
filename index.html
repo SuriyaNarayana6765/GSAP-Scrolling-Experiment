@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Here comes the sun — GSAP Scrolling Experiment</title>
+    <link rel="stylesheet" href="./scss/styles.scss" />
+  </head>
+  <body>
+    <header>The Beatles</header>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- hero -->
+        <section class="hero">
+          <div class="sun">
+            <div class="sun__circle"></div>
+          </div>
+          <h1 class="hero__title">Here comes the sun</h1>
+        </section>
+
+        <!-- lyrics -->
+        <section class="lyrics">
+          <h1 class="lyrics__title" data-lag="0.2">Little Darling</h1>
+          <p>
+            <span class="lyrics__ball" data-lag="1.1"></span>It's been a long,
+          </p>
+          <p>
+            cold lonely
+            <span class="asterisk" data-lag="1.2"
+              ><span class="asterisk__inner">✳︎</span>
+            </span>
+            winter
+          </p>
+        </section>
+
+        <!-- image -->
+        <section class="image">
+          <a
+            href="https://www.youtube.com/watch?v=KQetemT1sWc"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img
+              src="./images/video-screenshot.jpeg"
+              alt="Video thumbnail"
+              data-speed="0.5"
+            />
+          </a>
+        </section>
+
+        <!-- marquee -->
+        <section class="marquee">
+          <div class="left-image">
+            <img
+              width="350"
+              height="auto"
+              src="./images/beatles-jump.jpeg"
+              alt=""
+              data-lag="3"
+            />
+          </div>
+          <div class="right-image">
+            <img
+              width="350"
+              height="auto"
+              src="./images/beatles-reunion.jpeg"
+              alt=""
+              data-lag="2"
+            />
+          </div>
+
+          <h3 class="marquee__a">
+            It feels like years since it's been here It feels like years since
+            it's been here
+          </h3>
+          <h3 class="marquee__b">
+            It feels like years since it's been here It feels like years since
+            it's been here
+          </h3>
+        </section>
+
+        <!-- outro -->
+        <section class="outro">
+          <div class="outro__text">
+            <h3 data-lag=".8">The smiles returning to the faces</h3>
+            <div class="smile" data-lag=".5">)</div>
+          </div>
+          <p class="outro__by">
+            Design & Code with GSAP —
+            <a href="https://twitter.com/ismamz" target="_blank">isma</a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
